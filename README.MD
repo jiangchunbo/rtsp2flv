@@ -1,17 +1,20 @@
-# 安装 node.js
-node.js 包含 node + npm 工具
+# 环境
+安装 node.js（包含 node + npm）
 
 
-# 安装模块依赖
+# 构建项目
 进入项目目录，使用如下命令安装 js 依赖。
+
+
 ```bash
 npm install 
 ```
-依赖存在于 ./node_modules 中
+- 依赖存在于 ./node_modules 中
+- 速度慢可以使用淘宝镜像
 
 
 # 修改 WebSocket
-这是一个基于 WebSocket 的转流脚本，（Find）查找下面，根据需要，改掉默认的端口号。
+这是一个基于 WebSocket 的 JavaScript 转流脚本，根据需要，修改 rtsp2flv.js 文件默认的端口号。
 ````javascript
 const port = 39999;
 ````
@@ -28,5 +31,5 @@ rtsp2flv.js 就是文件夹下的文件
 - 后台运行
 
 ```bash
-nohup node rtsp2flv.js  > myLog.log 2>&1 &
+nohup node rtsp2flv.js  > rtsp2flv.log 2>&1 &
 ``` 

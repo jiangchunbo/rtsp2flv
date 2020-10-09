@@ -1,3 +1,16 @@
+# rtsp2flv.js
+一个用 JavaScript 编写的 WebSocket 服务，通过如下请求格式获取 flv 格式的视频流
+```
+ws://${ip}:${port}/rtsp?url=${url}
+```
+url：rtsp 地址
+
+如果 rtsp 地址包含额外参数，需要改写代码，代码中将参数写死：
+```javascript
+let url = req.query.url + '?streamform=rtp&standard=rtsp';
+```
+
+
 # 环境
 安装 node.js（包含 node + npm）
 

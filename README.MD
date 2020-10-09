@@ -5,7 +5,7 @@ ws://${ip}:${port}/rtsp?url=${url}
 ```
 url：rtsp 地址
 
-如果 rtsp 地址包含额外参数，需要改写代码，代码中将参数写死：
+如果 rtsp 地址包含额外参数，需要改写代码，代码中将参数是写死的：
 ```javascript
 let url = req.query.url + '?streamform=rtp&standard=rtsp';
 ```
